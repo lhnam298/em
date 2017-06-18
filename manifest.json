@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "em warning",
+  "description": "For EM",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://engagemanager.com/*",
+        "https://admin.s3.tmhdev.com/*",
+        "https://dev.v3.engagemanager.com/*",
+        "https://dev.v2.engagemanager.com/*"
+      ],
+      "js": ["warning.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "danger.png",
+    "bug.png",
+    "confirm.png"
+  ]
+}
